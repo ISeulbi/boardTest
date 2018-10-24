@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	margin: 0px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.top {
+	height: 15%;
+	background-color: lavender;
+}
+
+.bottom {
+	height: 15%;
+	background-color: gray;
+	overflow: outo;
+}
+
+.content {
+	height: 70%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+table, tr, td {
+	border-collapse : collapse;
+	border: 1px solid black;
+	text-align: center;
+}
+
+.paging {
+	width : 100%;
+	text-align : center;
+}
+
+.link {
+	text-align: center;
+}
+
+.dropmenu {
+	width: 100%;
+	background-color: black;
+	display: flex;
+	flex-direction: row;
+	align-content: flex-end;
+}
+
+.dropmenu div {
+	width: 200px;
+	height: 30px;
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+
+.dropmenu_con {
+	position: relative;
+}
+
+.dropmenu_side {
+	position: absolute;
+	display: none;
+	z-index: 1;
+}
+
+.dropmenu_con:hover .dropmenu_side {
+	display: block;
+	background-color: grey;
+}
